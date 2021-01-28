@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>New HMTL document by NewJect</title>
+
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="stylesheet" href="onclick-form-popup.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="onclick-form-popup.js"></script>
+</head>
+<body>
+     
+        <div id="main">
+           
+     
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; HR - RECRUITMENT</span>
+         </div>
+    <!--    side bar-->
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">JOB'S</a>
+  <a href="#">NEW JOBS</a>
+  <a class="btn btn-blue productCheckout" id="get-started" >NEW CANDIDATES</a>
+  <a href="#">CANDIDATES</a>
+        <a href="#">SETTINGS</a>
+</div>
+      
+<!--
+ <div class="side-widget open">
+  <div class="inner">
+    <a class="btn btn-blue productCheckout" id="get-started">Get Started</a>
+  </div>
+</div>
+-->
+<!--
+<section class="section triad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 triad-sub-section">
+        <p class="detail-paragraph">
+          <strong>Business Intelligence</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.
+        </p>
+        <p class="detail-paragraph">
+          <strong>Mining your Data</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Pattern Analysis</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Data Visualizations</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+      </div>
+      <div class="col-md-3 triad-sub-section">
+        <p class="detail-paragraph">
+          <strong>Search</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.
+        </p>
+        <p class="detail-paragraph">
+          <strong>Dynamic Data</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>3rd-Party Integrations</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Data Manager</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/devices.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<div id="popup-container">
+  <div id="popup-window">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>  
+      <a href="#" class="your-class"></a>
+      <div>
+        <div class="row text-center">
+          <h1>New  candiate (Details)</h1>
+          <hr>
+          <p>Fill out the form below to get started today!</p>
+        </div>
+        <br>
+          
+        <form action="/action_page.php"  method="post" id="footer-form">
+            
+          <center>
+               <div class="mb-3">   
+              
+                 <h5><p>u p l o a d - c v</p></h5> 
+               
+  <input class="form-control form-control-sm" id="formFileSm" type="file"><br>
+   </div>
+                  
+             
+          </center>  
+           <div class="row">
+            <div class="col-md-6">
+              <input class="form-control" name="first_name" id="first_name" placeholder="First Name *" required>  
+            </div>
+            <div class="col-md-6">
+              <input class="form-control" name="last_name" id="last_name" placeholder="Last Name *" required>  
+            </div>
+          </div>
+          <br>
+            
+          <div class="row">
+            <div class="col-md-6">
+              <input class="form-control" name="email" id="email" placeholder="  Email id  *"required>
+                 
+            </div>
+            <div class="col-md-6">
+              <input class="form-control" name="phone" placeholder="Phone *" id="phone">
+               
+            </div> </div>
+              <br>
+              <div class="row">
+              <div class="col-md-6">
+              <input class="form-control" list="datalistOptions" name="job" placeholder="Job *" id="job">
+               <datalist id="datalistOptions">
+  <option value="QA">
+      <option value="developer">
+   
+</datalist>
+            </div>
+              <div class="col-md-6">
+              <input class="form-control" list="datalistOptions2" name="source" placeholder="source *" id="source">
+               <datalist id="datalistOptions2">
+  <option value="facebook">
+  <option value="Career site">
+  <option value="linked in ">
+  <option value="referal">
+  <option value="Chicago">
+</datalist>    
+   
+              <br>
+            </div>
+               
+              
+              
+          </div>
+          <center>
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </center>
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+ <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
+</body>
+</html>
